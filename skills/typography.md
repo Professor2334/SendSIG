@@ -1,7 +1,7 @@
 # Typograph Rules
 This document defines the typographic system used throughout this application
 
-The system follows the principles influenced by the material design typographyb scale
+The system follows the principles influenced by the material design typography scale
 
 ## Objectives
 Typography provides :
@@ -33,5 +33,5 @@ use the type scale in  the typography tokens
 ## Accessibility
 - All text size must be measured in rem and not pixels
 - All heading and display text must use the clamp function in css
--Low constrast text combination are avoided 
+- Low constrast text combination are avoided 
 - Text placed on colored surfaces uses the matching "on-*" color token.
