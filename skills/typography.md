@@ -1,5 +1,5 @@
 # Typograph Rules
-This document defines the typographic system used throughout thiss application
+This document defines the typographic system used throughout this application
 
 The system follows the principles influenced by the material design typographyb scale
 
