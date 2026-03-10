@@ -1,0 +1,181 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--sys-font-body-body-medium-fontfamily), sans-serif;
+    /* Background from design tokens */
+    background-color: var(--sys-color-roles-neutral-role-neutral-color-role);
+    color: var(--sys-color-roles-neutral-role-on-neutral-color-role);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+.login-card {
+    background-color: var(--sys-primitive-color-collections-color-palettes-neutral-neutral100);
+    border-radius: 12px;
+    padding: 40px 32px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    border: 1px solid var(--sys-color-roles-outline-role-outline-variant-color-role);
+}
+
+.login-title {
+    font-size: var(--sys-font-title-title-large-fontsize);
+    font-weight: var(--sys-font-title-title-large-fontweight);
+    line-height: var(--sys-font-title-title-large-lineheight);
+    letter-spacing: var(--sys-font-title-title-large-letterspacing);
+    margin-bottom: 8px;
+    color: var(--sys-color-roles-neutral-role-on-neutral-color-role);
+    text-align: center;
+}
+
+.login-subtitle {
+    font-size: var(--sys-font-body-body-medium-fontsize);
+    font-weight: var(--sys-font-body-body-medium-fontweight);
+    line-height: var(--sys-font-body-body-medium-lineheight);
+    color: var(--sys-color-roles-neutral-variant-role-on-neutral-variant);
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-label {
+    font-size: var(--sys-font-label-label-medium-fontsize);
+    font-weight: var(--sys-font-label-label-medium-fontweight);
+    color: var(--sys-color-roles-neutral-role-on-neutral-color-role);
+}
+
+.form-input {
+    width: 100%;
+    padding: 12px 16px;
+    font-family: inherit;
+    font-size: var(--sys-font-body-body-large-fontsize);
+    color: var(--sys-color-roles-neutral-role-on-neutral-color-role);
+    background-color: var(--sys-primitive-color-collections-color-palettes-neutral-neutral100);
+    border: 1px solid var(--sys-color-roles-outline-role-outline-color-role);
+    border-radius: 8px;
+    transition: all 0.2s ease;
+    outline: none;
+}
+
+.form-input::placeholder {
+    color: var(--sys-color-roles-neutral-variant-role-on-neutral-variant-role);
+    font-size: var(--sys-font-label-label-small-fontsize);
+    font-weight: var(--sys-font-label-label-small-fontweight);
+    line-height: var(--sys-font-label-label-small-lineheight);
+    letter-spacing: var(--sys-font-label-label-small-letterspacing);
+}
+
+.form-input:hover {
+    border-color: var(--sys-color-roles-outline-role-outline-variant-color-role);
+}
+
+.form-input:focus {
+    border-color: var(--sys-color-roles-primary-role-primary-color-role);
+    box-shadow: 0 0 0 3px var(--sys-color-roles-primary-role-primary-container-role);
+}
+
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.remember-text {
+    font-size: var(--sys-font-label-label-medium-fontsize);
+    color: var(--sys-color-roles-neutral-variant-role-on-neutral-variant);
+}
+
+.forgot-password {
+    font-size: var(--sys-font-label-label-medium-fontsize);
+    font-weight: var(--sys-font-label-label-medium-fontweight);
+    color: var(--sys-color-roles-primary-role-primary-color-role);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.forgot-password:hover,
+.forgot-password:focus {
+    color: var(--sys-primitive-color-collections-color-palettes-primary-primary30);
+    text-decoration: underline;
+}
+
+.btn-primary {
+    width: 100%;
+    padding: 12px 16px;
+    font-family: inherit;
+    font-size: var(--sys-font-label-label-large-fontsize);
+    font-weight: var(--sys-font-label-label-large-fontweight);
+    /* CTA Text Color */
+    color: var(--sys-color-roles-primary-role-on-primary-color-role);
+    /* Primary CTA Background */
+    background-color: var(--sys-color-roles-primary-role-primary-color-role);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-top: 8px;
+}
+
+/* Hover and Focus States */
+.btn-primary:hover {
+    background-color: var(--sys-primitive-color-collections-color-palettes-primary-primary40);
+}
+
+.btn-primary:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px var(--sys-color-roles-primary-role-primary-container-role);
+    background-color: var(--sys-primitive-color-collections-color-palettes-primary-primary40);
+}
+
+.btn-primary:active {
+    background-color: var(--sys-primitive-color-collections-color-palettes-primary-primary30);
+}
+
+.signup-prompt {
+    margin-top: 24px;
+    text-align: center;
+    font-size: var(--sys-font-body-body-medium-fontsize);
+    color: var(--sys-color-roles-neutral-variant-role-on-neutral-variant);
+}
+
+.signup-link {
+    font-weight: var(--sys-font-label-label-large-fontweight);
+    color: var(--sys-color-roles-primary-role-primary-color-role);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.signup-link:hover,
+.signup-link:focus {
+    color: var(--sys-primitive-color-collections-color-palettes-primary-primary30);
+    text-decoration: underline;
+}
