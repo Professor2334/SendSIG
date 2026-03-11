@@ -20,7 +20,7 @@ Arial
 Roboto
 
 ## Type scale
-use the type scale in  the typography tokens
+use the type scale in  the design tokens
 
 ## Usage guidelines
 - Page display text should use Display Large 
