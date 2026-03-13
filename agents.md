@@ -5,7 +5,7 @@ Send Signal is a full-stack web application designed to automate personalized Wh
 
 The system enables businesses to import leads, organize contacts, create message templates and send personalised whatsapp messages to their leads using the whatsapp business API.
 
-The platform also provides message trackcing, reply monitoring, and campaign analytics.
+The platform also provides message tracking, reply monitoring, and campaign analytics.
 
 The application consists of two main surfaces:
 
@@ -190,7 +190,7 @@ lead activity timeline record will record communication events.
 
 ## 5. Technical Guardrails
 
-##
+
 
 - All outbound WhatsApp communication must occur from the server-side using the WhatsApp Business API
 - Frontend must never expose API credentials
@@ -207,7 +207,7 @@ minimum database entities include :
 - Analytics data
 
 ### Idempotent messaging 
-Campaigb messaging requires idemptent behaviour.
+Campaign messaging requires idemptent behaviour.
 
 Each message will be uniquely identified by a lead id and a campaign id. 
 
